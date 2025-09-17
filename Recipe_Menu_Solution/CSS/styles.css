@@ -1,0 +1,283 @@
+
+/*Reset default margin and padding*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+/*Responsive Design*/
+@media (max-width: 600px){
+    .outer-bg{
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .inner-bg{
+        width: 98vw;
+        max-width: 98vw;
+        margin: 50px auto;
+        padding: 20px;
+    }
+    .omelette{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+/*Inner Background Color*/
+.inner-bg{
+    background-color: white;
+    width: 50vw;
+    max-width: 650px;
+    margin: 100px auto;
+    border-radius: 16px;
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 1.5rem;
+    overflow-wrap: break-word;
+}
+
+/*Container Background Color*/
+.container-bg{
+    background-color: rgb(255, 241, 244);
+    width: 30vw;
+    min-width: 30px;
+    height: 20vh;
+    min-height: 20vh;
+    margin: 50px;
+    border-radius:5px;
+    padding-left: 50px;
+    padding-right: 60px;
+    position: relative;
+    z-index: 0;
+}
+
+/*Omelette Image Properties*/
+.omelette{
+    width: 635px;
+    height: auto;
+    border-radius: 16px;
+    margin-left: -75px;
+    margin-right: -75px;
+    margin-bottom: 20px;
+}
+
+/*Recipe Content Margin and Padding*/
+.recipe-content{
+    padding-top: 0px;
+    padding-left:0px;
+    margin-top: -30px;
+    margin-left: -35px;
+}
+
+/*Recipe Header*/
+h1.recipe-header{
+    font-family: 'sans-serif';
+    font-style: italic;
+    font-size: 36px;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+/*Recipe Description*/
+p.recipe-description{
+    font-family: 'sans-serif';
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Container Header*/
+h1.container-header{
+    font-family: 'sans-serif','arial';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color:rgba(93, 5, 87, 0.79);
+    padding-top: 20px;
+    padding-left: 15px; 
+    margin-left: -30px;
+    margin-bottom: 10px;
+}
+
+/*Preparation Time Description*/
+ul.prep-time-description li{
+    font-family: 'sans-serif','arial';
+    text-align: left;
+    color: rgba(0, 0, 0, 0.677);
+    list-style-type: disc;
+    margin-top: 0px;
+    margin-left: -37px;
+    padding-left: 25px;
+}
+
+/*Padding for Preparation Time li*/
+ul.prep-time-description li:not(:first-child){
+    padding-top: 10px;
+}
+
+/*Ingredients Header*/
+h1.ingredients-header{
+    font-family: 'serif';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    color:rgb(153, 107, 51);
+    padding-top: 20px; 
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+/*Ingredients List*/
+ul.ingredients-list li{
+    font-family: 'sans-serif','arial';
+    text-align: left;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.677);
+    list-style-type: square;
+    margin-top: 0px;
+    padding-left: 17px;
+    margin-left: 30px;
+}
+
+/*Padding for Ingredients li*/
+ul.ingredients-list li:not(:first-child){
+    padding-top: 10px;
+}
+
+/*Bullet color for Ingredients List*/
+ul.ingredients-list li::marker{
+    color: rgb(153, 107, 51);
+}
+
+/*divider line for Ingredients and Instructions*/
+.ingredients-divider{
+    border: none;
+    height: 1px;
+    width: 570px;
+    background-color:rgba(0, 0, 0, 0.095);
+    margin-top: 20px;
+    margin-left: 47px;
+    padding-left: 5rem;
+}
+
+/*Instructions Header*/
+h1.instructions-header{
+    font-family: 'serif';
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    color:rgb(153, 107, 51);
+    margin-top: 15px; 
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+/*Instructions List*/
+ol.instructions-list li{
+    font-family: 'sans-serif','arial';
+    text-align: left;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.677);
+    list-style-type: numeric;
+    margin-top: 0px;
+    padding-left: 17px;
+    margin-left: 32px;
+}
+
+/*Bullet color for instructions List*/
+ol.instructions-list li::marker{
+    color: rgb(153, 107, 51);
+    font-weight: bold;
+    font-family: 'sans-serif','arial';
+    font-size: 15px;
+}
+
+/*Divider line for Instructions and Nutrition*/
+.instructions-divider{
+    border: none;
+    height: 1px;
+    width: 570px;
+    background-color:rgba(0, 0, 0, 0.095);
+    margin-top: 20px;
+    margin-left: 47px;
+    padding-left: 5rem;
+}
+
+.nutition-container {
+  padding: 0 4.75rem;
+  max-width: 650px;
+  margin-top: 2rem;
+}
+/*Nutrition Header*/
+.nutrition-header {
+  font-family: 'serif';
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(153, 107, 51);
+  margin-left: -1.50rem;
+  margin-bottom: 10px;
+}
+.nutrition-description {
+  font-family: 'sans-serif', 'arial';
+  text-align: left;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.677);
+  margin-bottom: 1.5rem;
+  margin-left: -1.50rem;
+}
+/* Nutrition rows */
+.calories-details,
+.carbs-details,
+.protein-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Text properties */
+.calories-left,
+.carbs-left,
+.protein-left {
+  font-family: 'sans-serif', 'arial';
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.677);
+}
+
+.calories-right,
+.carbs-right,
+.protein-right {
+  font-family: 'sans-serif', 'arial';
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(153, 107, 51);
+  margin-right: 195px
+}
+
+/* Divider properties */
+.calories-divider,
+.carbs-divider,
+.protein-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.095);
+  width: 650px;
+  margin-left: -1.75rem;
+  margin-right: -4.75rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
